@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box
+  The width and height you set for an element includes any padding and borders,
+  so the TOTAL SIZE of the element REMAINS CONSTANT.
+  This can make it easier to create layouts that are responsive and maintain
+  a consistent width, regardless of padding or border sizes. 
+  */
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 2.5rem;
+}
+
+body {
+  /* min-height: 100vh
+  Sets the minimum height of an element to be 100% of the viewport height
+  Used to create full-screen sections or hero images that take up the entire viewport height 
+  */
+  min-height: 100vh;
+  background-color: #000;
+  color: whitesmoke;
+  /* display: grid
+  Allows you to create a grid of items, similar to a table,
+  but with more flexibility in terms of layout and positioning. 
+  */
+  display: grid;
+  /* place-content: center
+  aligns grid items both horizontally and vertically at the center of the grid.
+  */
+  place-content: center;
+  padding: 1rem;
+}
