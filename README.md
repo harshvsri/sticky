@@ -1,4 +1,4 @@
-# techNotes
+# Tech Notes
 
 A Full Stack Web app for note creation and assignment.
 
