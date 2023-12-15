@@ -7,11 +7,11 @@
 }
 
 /* || VARIABLES 
-These variables can be used throughout the website's stylesheet to ensure consistency in design 
+These variables can be used throughout the website's stylesheets to ensure consistency in design 
 and allow for easy changes to the color scheme in the future.
 
 The benefit of using custom variables is that they can be easily updated in one place, 
-and the changes will apply throughout the stylesheet wherever the variable is used. 
+and the changes will apply throughout the stylesheets wherever the variable is used. 
 This can save time and effort when making design changes to a website.
 */
 :root {
