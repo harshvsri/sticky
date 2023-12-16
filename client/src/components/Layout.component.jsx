@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 /*
 <Outlet /> component is used to render child routes within a parent component.
@@ -12,9 +12,33 @@ can have one or more child routes defined with nested <Route> components.
 the corresponding component is rendered inside the <Outlet /> component in the parent component.
 */
 const Layout = () => {
+  const [users, setUsers] = useState([]);
+
+  async function getDataFromAPI() {
+    try {
+      const res = await fetch("http://localhost:3000/users");
+      if (!res.ok) {
+        throw new Error(`HTTP error! status: ${res.status}`);
+      }
+      const data = await res.json();
+      setUsers(data);
+    } catch (err) {
+      console.log("Failed to fetch users:", err);
+    }
+  }
+
+  useEffect(() => {
+    getDataFromAPI();
+  }, []);
+
   return (
     <div>
-      <Outlet />
+      <h1>These are the users from database...{Math.random()}</h1>
+      {users.map((user, index) => (
+        <div key={index}>
+          <h1>{`UserID of ${user.username} is ${user._id}`}</h1>
+        </div>
+      ))}
     </div>
   );
 };
