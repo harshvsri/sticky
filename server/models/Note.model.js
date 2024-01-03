@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 
-// Defining the User schema.
 const noteSchema = new mongoose.Schema(
   {
     user: {
@@ -26,5 +25,5 @@ const noteSchema = new mongoose.Schema(
   }
 );
 
-// Defining the model.
-module.exports = mongoose.model("Note", noteSchema);
+const Note = mongoose.model("Note", noteSchema);
+module.exports = Note;
