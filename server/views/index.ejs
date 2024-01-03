@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/notes.png" type="image/x-icon" />
+    <title>techNotes</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <!-- Adding GSAP and script -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+    ></script>
+    <script defer src="javascripts/script.js"></script>
+  </head>
+  <body>
+    <section id="background">
+      <div id="blob"></div>
+      <div id="blur"></div>
+    </section>
+
+    <main>
+      <div id="video-container">
+        <video
+          poster="/assets/general/_webpTransform/ezgif.com-gif-maker.webp"
+          src="https://player.vimeo.com/progressive_redirect/playback/725952347/rendition/1080p/file.mp4?loc=external&amp;signature=57a7c3522f4c7c21f8123a490b67c603be4efaa02c9c70cfde99789ab3ea9a29"
+          muted
+          autoplay
+          loop
+          playsinline
+        ></video>
+      </div>
+
+      <div id="title">
+        <span class="word">
+          <span class="char">t</span>
+          <span class="char">e</span>
+          <span class="char">c</span>
+          <span class="char">h</span>
+          <span class="char">N</span>
+          <span class="char">o</span>
+          <span class="char">t</span>
+          <span class="char">e</span>
+          <span class="char">s</span>
+        </span>
+        <span class="word">
+          <span class="char">m</span>
+          <span class="char">a</span>
+          <span class="char">d</span>
+          <span class="char">e</span>
+          <span class="char">d</span>
+          <span class="char">B</span>
+          <span class="char">y</span>
+        </span>
+        <span class="word">
+          <span class="char">h</span>
+          <span class="char">a</span>
+          <span class="char">r</span>
+          <span class="char">s</span>
+          <span class="char">h</span>
+          <span class="char">S</span>
+          <span class="char">r</span>
+          <span class="char">i</span>
+          <span class="char">v</span>
+          <span class="char">a</span>
+          <span class="char">s</span>
+          <span class="char">t</span>
+          <span class="char">a</span>
+          <span class="char">v</span>
+          <span class="char">a</span>
+        </span>
+      </div>
+
+      <button id="replay">
+        <span id="purple"></span>
+        <span id="turquois"></span>
+        <span id="yellow"></span>
+        <span class="text" id="text-static">Replay animation</span>
+        <span class="text" id="text-reveal">Replay animation</span>
+      </button>
+    </main>
+
+    <a href="https://github.com/harshvsri/tech-notes" target="_blank">
+      REPO ↗</a
+    >
+  </body>
+</html>
