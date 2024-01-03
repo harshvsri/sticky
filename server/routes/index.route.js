@@ -1,10 +1,8 @@
 var express = require("express");
 var router = express.Router();
 
-/*
-This code defines a router that handles HTTP requests for the root route ("/")
-using the get, post methods.
-*/
+/* This code defines a router that handles HTTP requests for the root route ("/")
+using the get, post methods. */
 
 router
   .route("/")
